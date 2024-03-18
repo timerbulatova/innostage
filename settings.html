@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Innostage</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/style6.css"> 
+    <link rel="stylesheet" href="./fonts/inter/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="container-wide">
+                <div class="logo"><a href="index.html"><img src="img/Vector.svg" alt="Vector.svg"></a></div>
+                    <div class="heading">Оценка состояния ИБ</div>
+                    
+                </div>
+                <div class="container">
+                    <div class="logo3"><a href="index.html"><img src="img/question.svg" alt="question.svg"></a></div>
+                    <div class="logo2" id="profileBtn"><img src="img/account.svg" alt="account.svg"></div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><img src="img/person.svg" alt="person.svg"><a href="account.html">&nbsp; Личный кабинет</a></li>
+            <li><img src="img/Ellipse.svg" alt="Ellipse.svg"><a href="#">&nbsp; Домены</a></li>
+            <li><img src="img/Ellipse.svg" alt="Ellipse.svg"><a href="#">&nbsp; Опросный лист</a></li>
+            <li><img src="img/Ellipse.svg" alt="Ellipse.svg"><a href="#">&nbsp; Оценка</a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <div class="form">
+            <div class="form-header">
+                <button class="btn">Данные юридического лица</button>
+                <a href="worker.html"><button class="btn2">Данные работника</button></a>
+            </div>
+            
+            <div class="form-fields">
+                <div class="field">
+                    <label for="name">Наименование</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="field">
+                    <label for="activity">Сфера деятельности</label>
+                    <select id="activity">
+                        <option>&nbsp;Выберите сферу деятельности</option>
+                        <!-- добавьте остальные варианты в option -->
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="orgType">Тип организации</label>
+                    <select id="orgType">
+                        <option>&nbsp;Выберите тип организации</option>
+                        <!-- добавьте остальные варианты в option -->
+                    </select>
+                </div>
+
+                <div class="checkbox">
+                    <label for="checkbox"><input type="checkbox" id="checkbox"> Субъект КИИ</label>
+                    <label for="checkbox"><input type="checkbox" id="checkbox"> Оператор ПДн</label>
+                    
+                </div>
+                <div class="field">
+                    <label for="name">Адрес местонахождения</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="field">
+                    <label for="name">Электронная почта</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="field">
+                    <label for="name">Телефон</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="field">
+                    <label for="name">ФИО руководителя</label>
+                    <input type="text" id="name">
+                </div>
+            </div>
+            <button type="submit">Сохранить</button>
+        </div>
+            </div>
+            <div class="profile-settings" id="profileSettings">
+                <form class="profile-form">
+                    <div class="form-header">Настройки профиля</div>
+                    <div class="form-fields">
+                        <div class="formss">
+                            <div class="field">
+                                <label for="name1">Личные данные</label>
+                                <input type="text1" placeholder="   ФИО">
+                            </div>
+                            </div>
+                            <div class="field">
+                                <label for="name2">Электронная почта</label>
+                                <div class="text2"> konstantynkormet2007@mail.ru </div>
+                                <div class="text"> Если у вас возникла необходимость изменить почту - обратитетесь в техподдержку helpOSIB@osib.ru.</div>
+                            </div>    
+                        
+                    
+            </div>
+            <script>
+                // JavaScript для открытия формы "Настройки профиля" по нажатию на иконку "account.svg"
+                const profileBtn = document.getElementById("profileBtn");
+                const profileSettings = document.getElementById("profileSettings");
+        
+                profileBtn.addEventListener("click", () => {
+                    profileSettings.style.display = "flex";
+                });
+            </script>
+
+</body>
+</html>
